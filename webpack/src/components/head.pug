@@ -1,0 +1,21 @@
+.head
+    a(href="/").head__logo.logo
+        +icon('logo', 'logo', [48, 32])
+
+    nav.head__navigation.navigation
+        ul.navigation__list.list
+            li.list__item
+                a(href="#about").list__link О нас
+
+            li.list__item
+                a(href="#blog").list__link Блог
+
+            li.list__item
+                a(href="#cariera").list__link Карьера в tit
+
+    nav.head__cabine-nav.cabinet-nav
+        ul.cabinet-nav__list.list
+            li.list__item
+                a(href="#").list__link Войти
+
+    +button('head', 'Зарегестрироватсья', 'default')

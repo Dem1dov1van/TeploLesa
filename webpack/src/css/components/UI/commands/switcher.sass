@@ -1,0 +1,41 @@
+.switcher
+  border: 1px solid $color-background-1
+  border-radius: 18px
+  display: flex
+  cursor: pointer
+
+  &__first-btn
+    color: $color-text-0
+    background: $color-background-1
+    padding: 24px 32px
+    border-radius: 16px
+    flex-grow: 1
+    text-align: center
+
+  &__second-btn
+    color: $color-text-0
+    padding: 24px 32px
+    border-radius: 16px
+    flex-grow: 1
+    text-align: center
+    transition: .3s
+    &:hover
+      background: $color-background-2
+      transition: .3s
+
+  &__input
+    display: none
+
+  &__input:checked+.switcher__first-btn
+    color: $color-text-1
+    background: $color-background-0
+    &:hover
+      background: $color-background-2
+      color: $color-text-0
+      transition: .3s
+
+  &__input:checked~.switcher__second-btn
+    color: $color-text-0
+    background: $color-background-1
+    &:hover
+      background: $color-background-1

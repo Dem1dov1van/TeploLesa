@@ -1,0 +1,8 @@
+mixin switcher(elementClassName, text)
+    label(class=`${elementClassName}__switcher switcher`)
+        input(type="checkbox").switcher__input
+
+        span.switcher__first-btn= text[0]
+
+        span.switcher__second-btn= text[1]
+

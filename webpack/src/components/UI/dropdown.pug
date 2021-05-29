@@ -1,0 +1,7 @@
+mixin dropdown(elementClassName, title, content)
+    div(class=`${elementClassName}__dropdown dropdown`)
+        .dropdown__head
+            p.dropdown__paragraph= title
+
+        .dropdown__body
+            span.dropdown__hide-content= content

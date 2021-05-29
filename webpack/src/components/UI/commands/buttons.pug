@@ -1,0 +1,10 @@
+mixin button(elementClassName, text, typeBtn)
+
+    if typeBtn === 'default'
+        button(class=`${elementClassName}__main-btn main-btn`)= text
+
+    if typeBtn === 'medium'
+        button(class=`${elementClassName}__main-btn main-btn main-btn--medium`)= text
+
+    if typeBtn === 'accentColor'
+        button(class=`${elementClassName}__main-btn main-btn main-btn--accent-color`)= text
